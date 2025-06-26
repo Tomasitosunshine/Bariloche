@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="icon" href="./Imagenes/Logo.png">
+</head>
+<title>Bariloche site</title>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-between">
+        <!-- Logo -->
+        <h2><a class="fw-bold custom-tittle" href="#">Bariloche</a></h2>
+
+        <!-- Botón para pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces a la derecha -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./pages/lugares.html">Lugares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./pages/gastronomia.html">Gastronomia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./pages/historia.html">Historia</a>
+            </li>
+            <li>
+              <button type="button" class="btn custom-style">
+                <a href="./pages/contacto.html">
+                  Contacto
+                </a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sectionInicio">
+
+      <h1>Bienvenido a Bariloche</h1>
+
+    </section>
+    <section>
+      <article>
+        <div class="lugaresInicio">
+
+          <h2>Descubre los lugares mas lindos de Bariloche</h2>
+          <p>Escenarios únicos donde la montaña, el lago y la nieve se encuentran.</p>
+        </div>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Imagenes/index/PlayaInicio.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./Imagenes/index/nieveMontaña.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./Imagenes/index/boteInicio.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+      </article>
+      <article>
+        <div class="actividadesInicio">
+          <h2>Actividades en Bariloche</h2>
+          <div class="imgActividadesInicio">
+            <a href="./pages/lugares.html">
+              <img class="img-fluid" src="Imagenes/index/Cerro Catedral.jpg" alt="" />
+            </a>
+            <a href="./pages/gastronomia.html">
+              <img class="img-fluid" src="Imagenes/index/chocolate1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="textActividadesInicio">
+
+            <h3>Sobre Bariloche</h3>
+            <p>
+              San Carlos de <strong>Bariloche</strong> se encuentra en la región de la Patagonia argentina, dentro de la
+              provincia de Río
+              Negro,
+              al pie de la cordillera de los Andes y a orillas del majestuoso lago Nahuel Huapi. Rodeada de montañas,
+              bosques y lagos,
+              es una de las ciudades turísticas más importantes del país, ubicada dentro del Parque Nacional Nahuel
+              Huapi.
+            </p>
+            <p>
+              Además de su privilegiada ubicación, <strong>Bariloche</strong> es reconocida por su exquisita
+              gastronomía. El chocolate
+              artesanal
+              ocupa un lugar especial en el corazón de los visitantes, siendo una verdadera tradición local. A esto se
+              suman
+              delicias como truchas, ahumados, cervezas artesanales y platos típicos de montaña que completan una
+              experiencia
+              culinaria única.
+            </p>
+            <p>
+              Pero <strong>Bariloche</strong> no solo conquista por el gusto, sino también por la vista. Sus lagos
+              cristalinos, montañas
+              imponentes
+              y paisajes patagónicos crean un entorno natural de ensueño que invita a recorrer senderos, disfrutar de
+              miradores
+              panorámicos y descubrir rincones mágicos en cada estación del año. La combinación de sabores auténticos y
+              naturaleza
+              imponente hacen de <strong>Bariloche</strong> un destino verdaderamente inolvidable.
+            </p>
+          </div>
+
+        </div>
+      </article>
+    </section>
+  
+  </main>
+
+  <footer>
+    <p>© 2025 Mi sitio web</p>
+    <div class="contieneRedes">
+      <div class="contieneRedes2">
+        <a target="_blank" href="https://www.instagram.com/tomas_ayala0/"> <img
+            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png" alt="" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/tomas-ayala-646244345/"><img
+            src="https://img.icons8.com/ios11/512/FFFFFF/linkedin.png" alt="" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

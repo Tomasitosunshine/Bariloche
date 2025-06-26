@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+:root {
+    --font-size-Bariloche: 50;
+}
+
+body {
+    background-color: #f4f5f7 !important;
+}
+
+/* Header */
+
+header h1 {
+    padding-left: 25px;
+    font-weight: 600;
+
+
+}
+
+header {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.custom-tittle {
+    font-size: 50px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    list-style: none;
+}
+
+.custom-style {
+    background-color: black;
+    border-color: black;
+
+}
+
+.custom-style a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.custom-style:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn-secondary a {
+    font-size: 15px;
+    font-weight: 500;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------- Index ------------------------------------------------------------------------------------ */
+
+/* Main */
+
+
+.sectionInicio {
+    background-image: url(../Imagenes/index/FondoInicio.jpg);
+    height: 100dvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionInicio h1 {
+    font-family: "Inter";
+    color: rgba(225, 233, 246, 1);
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.lugaresInicio {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.lugaresInicio p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+/* Carrusel */
+.carousel-item img {
+    object-fit: cover;
+    max-height: 600px;
+    /* Puedes ajustar la altura a lo que desees */
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.carruselInicio {
+    width: 100%;
+}
+
+/* Actividades Bariloche */
+
+.actividadesInicio {
+    display: flex;
+    flex-direction: column;
+}
+
+.actividadesInicio h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.imgActividadesInicio {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+
+.imgActividadesInicio img {
+    outline: 10px solid rgba(230, 231, 232, 0.6);
+    outline-offset: -10px;
+    border-radius: 5px;
+}
+
+.imgActividadesInicio img {
+    width: 70dvh;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.textActividadesInicio h3 {
+    text-align: center;
+}
+
+.textActividadesInicio {
+    width: 70rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+    margin-block: 1lh;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------- Fin Index ------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------- Lugares ------------------------------------------------------------------------------------ */
+.sectionLugares {
+    height: 300px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.sectionLugares::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../Imagenes/lugares/fondoLugares-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+.datosLugares {
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.sectionCarrusel {
+    display: flex;
+    width: 800px;
+    height: 530px;
+    margin: 0 auto;
+}
+
+.sectionCarrusel img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.sectionCarrusel img:hover {
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.sectionVideoLugares {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.sectionVideoLugares video {
+    width: 100dvh;
+}
+
+
+
+/* ------------------------------------------------------------------- Fin Lugares ------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------- Gastronomia ------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+.sectionFondoGastronomia {
+    background-image: url(../Imagenes/gastronomia/comidaFondo.jpg);
+    height: 60dvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionFondoGastronomia::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f4f5f7 100%);
+
+}
+
+.sectionFondoGastronomia h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.sectionGastronomia h2 {
+    font-weight: 700;
+}
+
+.sectionGastronomia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionGastronomia>div {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: center;
+    padding: 0 50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.sectionGastronomia img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px rgb(49, 49, 49);
+    /*  display: block; */
+}
+
+.platosGastronomia2,
+.platosGastronomia {
+    border-bottom: .5px solid rgb(143, 143, 143);
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------- Fin Gastronomia ------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------- Historia ------------------------------------------------------------------------------------ */
+
+.sectionHistoria {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: 400px;
+    padding-bottom: 10rem;
+    /* margin-left: 100px; */
+}
+
+.sectionHistoria h1 {
+    font-weight: 700;
+    padding-top: 40px;
+}
+
+.sectionHistoria img {
+    border-radius: 5px;
+
+}
+
+.origenesBariloche img {
+    max-width: 100%;
+}
+
+.sectionHistoria p {
+    margin-block: 1lh;
+}
+
+.sectionHistoria h2 {
+    padding-top: 30px;
+}
+
+
+
+/* ------------------------------------------------------------------- Fin Historia ------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------- Contacto ------------------------------------------------------------------------------------ */
+
+.infoContacto {
+    display: flex;
+    margin-top: 50px;
+    /* margin-left: 50px; */
+    justify-content: space-around;
+}
+
+.infoContacto h1 {
+    font-weight: 700;
+}
+
+.infoPersonal {
+    flex-direction: column;
+    width: 51rem;
+}
+
+.infoContacto img {
+    width: 400px;
+    border-radius: 5%;
+}
+
+.sectionFormulario {
+    height: 90dvh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.sectionFormulario h2 {
+    font-weight: 700;
+}
+
+.formNombreCompleto {
+    display: flex;
+    gap: 1rem;
+}
+
+.formNombre {
+    display: flex;
+    flex-direction: column;
+}
+
+.formApellido {
+    display: flex;
+    flex-direction: column;
+}
+
+.formEmail {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.sectionFormulario textarea,
+.sectionFormulario input {
+    background-image: none;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.sectionFormulario textarea:focus,
+.sectionFormulario input:focus {
+    box-shadow: 0 0 5px 2px rgb(28, 177, 236);
+}
+
+
+
+.sectionFormulario label {
+    padding: 5px 0px;
+}
+
+.formNombreCompleto input {
+    width: 25rem;
+    height: 40px;
+}
+
+.formEmail input {
+    width: 51rem;
+    height: 40px;
+}
+
+.formMensaje {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.formMensaje textarea {
+    width: 51rem;
+    height: 150px;
+}
+
+.formBoton button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.formBoton button:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------------------------------------------------------- Fin Contacto ------------------------------------------------------------------------------------ */
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background: #26282c;
+    color: #fff;
+}
+
+.footer-line {
+    margin: 0 auto 20px auto;
+    width: 115rem;
+    height: 1px;
+    background-color: #333;
+}
+
+.contieneRedes2 {
+    padding-left: 10px;
+}
+
+footer h4 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+footer img {
+    width: 30px;
+    /* height: 30px; */
+}
+
+
+/* ---------------------------------- Media Query ------------------------------------ */
+
+/* Index */
+@media (width < 1200px) {
+    .textActividadesInicio {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (width < 800px) {
+    .imgActividadesInicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (width < 700px) {
+    .sectionInicio h1 {
+        font-size: 50px;
+    }
+
+    .sectionFondoGastronomia h1{
+        font-size: 45px;
+    }
+}
+@media (width < 550px) {
+    .sectionInicio h1 {
+        font-size: 40px;
+    }
+}
+
+/* Gastronomia */
+
+@media (850px < width < 1200px) {
+    .sectionGastronomia img {
+        max-width: 450px;
+        height: min-content;
+    }
+}
+
+@media (width < 950px){
+    .sectionFondoGastronomia h1{
+        font-size: 50px;
+    }
+}
+
+@media (750px < width < 850px) {
+    .sectionGastronomia img {
+        max-width: 350px;
+        height: min-content;
+    }
+
+}
+
+@media (750px > width) {
+
+    .sectionGastronomia > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sectionGastronomia img {
+        margin: 0 auto;
+    }
+}
