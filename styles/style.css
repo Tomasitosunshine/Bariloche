@@ -13,6 +13,7 @@
 
 body {
     background-color: #f4f5f7 !important;
+    height: 100dvh;
 }
 
 /* Header */
@@ -151,6 +152,7 @@ header {
 
 .textActividadesInicio h3 {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .textActividadesInicio {
@@ -225,14 +227,16 @@ header {
     filter: contrast(120%);
 }
 
-.sectionVideoLugares {
+
+
+/* .sectionVideoLugares {
     text-align: center;
     padding: 50px 0px;
 }
 
 .sectionVideoLugares video {
     width: 100dvh;
-}
+} */
 
 
 
@@ -542,13 +546,21 @@ footer img {
         font-size: 50px;
     }
 
-    .sectionFondoGastronomia h1{
+    .sectionFondoGastronomia h1 {
         font-size: 45px;
     }
 }
+
 @media (width < 550px) {
     .sectionInicio h1 {
         font-size: 40px;
+    }
+
+    .sectionInicio {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: none;
     }
 }
 
@@ -561,8 +573,8 @@ footer img {
     }
 }
 
-@media (width < 950px){
-    .sectionFondoGastronomia h1{
+@media (width < 950px) {
+    .sectionFondoGastronomia h1 {
         font-size: 50px;
     }
 }
@@ -577,7 +589,7 @@ footer img {
 
 @media (750px > width) {
 
-    .sectionGastronomia > div {
+    .sectionGastronomia>div {
         display: flex;
         flex-direction: column;
     }
