@@ -6,26 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">  
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="../styles/style.css" />
-  
+
   <link rel="icon" href="../Imagenes/Logo.png">
   <title>Document</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
       <div class="container-fluid d-flex justify-content-between">
         <!-- Logo -->
         <h2><a class="fw-bold custom-tittle" href="../index.html">Bariloche</a></h2>
 
         <!-- Botón para pantallas pequeñas -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
+
 
         <!-- Enlaces a la derecha -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -60,13 +64,8 @@
   <main>
     <section class="sectionLugares">
       <div class="datosLugares">
-        <h1>Bariloche alberga muchos lugares bellos</h1>
-        <p>
-          Descubre los lugares más lindos de Bariloche, desde el imponente Cerro Catedral hasta el tranquilo Lago
-          Gutiérrez. <br>
-          Paseá por el Circuito Chico, maravíllate con las vistas desde el Cerro Campanario <br>
-          y explorá el encanto natural del Parque Nacional Nahuel Huapi. <br>
-        </p>
+        <h1>Explorá los lugares más icónicos de Bariloche</h1>
+        <p>Desde cerros panorámicos hasta bosques encantados, cada rincón tiene su magia.</p>
       </div>
     </section>
     <section class="sectionCarrusel">
@@ -78,17 +77,57 @@
       <img src="../Imagenes/lugares/carruselLugares6.jpg" alt="">
     </section>
 
-   <section>
-    <h2>Un poco sobre Bariloche</h2>
-   </section>
-<!-- 
     <section class="sectionVideoLugares">
-      <h2>Video sobre Bariloche</h2>
-      <video controls autoplay muted preload="auto" src="../video/Bariloche video2.mp4"></video>
+      <h2>Un poco de Bariloche</h2>
+      <iframe width="660" height="415" src="https://www.youtube.com/embed/R70Hv0Ae-nc?si=fLs0sk2ttRZeqf-X"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
- -->
+    <section class="cardLugares">
+      <div class="card">
+        <img src="../Imagenes/index/boteInicio.jpg.webp" alt="">
+        <div class="card-content">
+          <h3>Título 1</h3>
+          <p>Texto descriptivo para la card número uno. Breve y claro.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Imagenes/index/boteInicio.jpg.webp" alt="">
+        <div class="card-content">
+          <h3>Título 2</h3>
+          <p>Texto descriptivo para la card número dos. Información concisa.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Imagenes/index/boteInicio.jpg.webp" alt="">
+        <div class="card-content">
+          <h3>Título 3</h3>
+          <p>Texto descriptivo para la card número tres. Breve descripción.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Imagenes/index/boteInicio.jpg.webp" alt="Imagen 4">
+        <div class="card-content">
+          <h3>Título 4</h3>
+          <p>Texto descriptivo para la card número cuatro. Texto informativo.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../Imagenes/index/boteInicio.jpg.webp" alt="Imagen 5">
+        <div class="card-content">
+          <h3>Título 5</h3>
+          <p>Texto descriptivo para la card número cinco. Descripción corta.</p>
+        </div>
+      </div>
+    </section>
+
   </main>
-  
+
   <footer>
     <p>© 2025 Mi sitio web</p>
     <div class="contieneRedes">
