@@ -1,0 +1,66 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+
+.sectionFondoGastronomia {
+    background-image: url(../Imagenes/gastronomia/comidaFondo.jpg);
+    height: 60dvh;
+    @include background(no-repeat, cover, center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 200px;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f4f5f7 100%);
+    }
+
+    h1 {
+        color: $whiteColor;
+        font-size: 65px;
+        font-weight: $fontBold;
+    }
+}
+
+.sectionGastronomia {
+    @include flex-column;
+    align-items: center;
+
+    h2 {
+        font-weight: $fontBold;
+    }
+
+    img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: -5px 5px 15px rgb(49, 49, 49);
+    }
+
+    > div {
+        display: flex;
+        gap: 5rem;
+        width: 100%;
+        max-width: 1100px;
+        justify-content: center;
+        padding: 0 50px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    
+
+}
+
+.platosGastronomia,
+.platosGastronomia2 {
+  border-bottom: 0.5px solid rgb(143, 143, 143);
+}

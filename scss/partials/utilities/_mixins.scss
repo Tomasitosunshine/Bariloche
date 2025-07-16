@@ -1,0 +1,10 @@
+@mixin background($repeat,$size,$position){
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}

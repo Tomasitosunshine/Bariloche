@@ -1,0 +1,163 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+
+.infoContacto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+    h1 {
+        font-weight: $fontBold;
+    }
+
+    .infoPersonal {
+        @include flex-column;
+        width: 51rem;
+        max-width: 100%;
+
+
+    }
+
+    img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .redesSociales {
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin: 0 10px;
+
+                a {
+                    position: relative;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: white;
+                    text-align: center;
+                    transition: 0.5s;
+                    transform: translate(0, 0px);
+                    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+
+                    .fa {
+                        color: $blackColor;
+                        font-size: 25px;
+                        line-height: 50px;
+                        transition: .5s;
+
+                        &:hover {
+                            color: $whiteColor;
+                        }
+                    }
+
+                    &:hover {
+                        transform: rotate(0deg) skew(0deg) translate(0, -10px);
+                    }
+                }
+
+                &:nth-child(1) a:hover {
+                    background-color: #ec13b6;
+                }
+
+                &:nth-child(2) a:hover {
+                    background-color: #e4405f;
+                }
+
+                &:nth-child(3) a:hover {
+                    background-color: #55acee;
+                }
+            }
+        }
+    }
+}
+
+.sectionFormulario {
+  height: 90dvh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-weight: $fontBold;
+  }
+
+  label {
+    padding: 5px 0px;
+  }
+
+  textarea,
+  input {
+    background-image: none;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+
+    &:focus {
+      box-shadow: 0 0 4px 2px rgb(3, 42, 58);
+    }
+  }
+
+  .formNombreCompleto {
+    display: flex;
+    gap: 1rem;
+
+    input {
+      width: 25rem;
+      max-width: 100%;
+      height: 40px;
+    }
+  }
+
+  .formNombre,
+  .formApellido {
+    @include flex-column;
+  }
+
+  .formEmail {
+    @include flex-column;
+    padding-top: 15px;
+
+    input {
+      width: 51rem;
+      max-width: 100%;
+      height: 40px;
+    }
+  }
+
+  .formMensaje {
+     @include flex-column;
+    padding-top: 15px;
+
+    textarea {
+      max-width: 51rem;
+      height: 150px;
+      field-sizing: content;
+    }
+  }
+
+  .formBoton {
+    button {
+      background-color: $blackColor;
+      color: $whiteColor;
+      padding: 10px 25px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/* BASE */
+@use "./partials/base/resets";
+@use "./partials/base/tipografia";
+
+
+@use "./partials/components/mediaQuery";
+@use "./partials/components/contacto";
+@use "./partials/components/historia";
+@use "./partials/components/gastronomia";
+@use "./partials/components/lugares";
+@use "./partials/components/header";
+@use "./partials/components/footer";
+@use "./partials/components/index";

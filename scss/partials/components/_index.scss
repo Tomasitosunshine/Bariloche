@@ -1,0 +1,79 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.sectionInicio {
+    @include background(no-repeat, cover, center);
+    background-image: url(../Imagenes/index/FondoInicio.jpg);
+    height: 100dvh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: "Inter";
+        color: rgba(225, 233, 246, 1);
+        font-weight: $fontBold;
+        font-size: 64px;
+    }
+}
+
+.lugaresInicio {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+
+    p {
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+.carousel-item {
+    img {
+        object-fit: cover;
+        max-height: 600px;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.actividadesInicio {
+    @include flex-column;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .imgActividadesInicio {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 3rem;
+
+        img {
+            outline: 10px solid rgba(230, 231, 232, 0.6);
+            outline-offset: -10px;
+            border-radius: 5px;
+            width: 70dvh;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .textActividadesInicio {
+        width: 70rem;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10rem;
+        margin-block: 1lh;
+        h3{
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+    }
+}

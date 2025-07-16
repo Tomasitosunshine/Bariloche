@@ -1,910 +1,648 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* BASE */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
 }
-
 
 body {
-    background-color: #f4f5f7 !important;
-   overscroll-behavior: none;
-   height: 100svh;
-
+  background-color: #f4f5f7 !important;
+  overscroll-behavior: none;
+  height: 100svh;
 }
 
-/* Header */
-
-header h1 {
-    padding-left: 25px;
-    font-weight: 600;
-
-
+@media (max-width: 1300px) {
+  .infoPersonal {
+    padding: 0 1rem;
+  }
 }
-
-header {
-    font-size: 15px;
-    font-weight: 500;
+@media (max-width: 1200px) {
+  .textActividadesInicio {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
-
-.navbar-toggler {
-    border: 0;
+@media (min-width: 850px) and (max-width: 1200px) {
+  .sectionGastronomia img {
+    max-width: 450px;
+    height: min-content;
+  }
 }
-
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
-    border: 0;
-}
-
-.toggler-icon {
-    width: 30px;
-    height: 3px;
-    background-color: #000000;
-    display: block;
-    transition: all 0.2s;
-}
-
-.middle-bar {
-    margin: 5px auto;
-}
-
-.navbar-toggler .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 15% 10%;
-}
-
-.navbar-toggler .middle-bar {
-    opacity: 0;
-}
-
-.navbar-toggler .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 5% 10%;
-}
-
-.navbar-toggler.collapsed .top-bar {
-    transform: rotate(0deg);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-    transform: rotate(0deg);
-}
-.navbar-toggler.collapsed .toggler-icon {
-    background-color: #000000;
-}
-
-
-.custom-tittle {
-    font-size: 50px;
-    color: #000000;
-    text-decoration: none;
-}
-
-.btn-secondary {
-    list-style: none;
-}
-
-.custom-style {
-    background-color: black;
-    border-color: black;
-
-}
-
-.custom-style a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.custom-style:hover {
-    background-color: #333;
-    border-color: #333;
-}
-
-.btn-secondary a {
-    font-size: 15px;
-    font-weight: 500;
-    color: aliceblue;
-    text-decoration: none;
-}
-
-/* ------------------------------------------------------------------- Index ------------------------------------------------------------------------------------ */
-
-/* Main */
-
-
-.sectionInicio {
-    background-image: url(../Imagenes/index/FondoInicio.jpg);
-    height: 100dvh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sectionInicio h1 {
-    font-family: "Inter";
-    color: rgba(225, 233, 246, 1);
-    font-weight: 700;
-    font-size: 64px;
-}
-
-.lugaresInicio {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    text-align: center;
-}
-
-.lugaresInicio p {
-    font-weight: 400;
-    font-size: 20px;
-}
-
-
-/* Carrusel */
-.carousel-item img {
-    object-fit: cover;
-    max-height: 600px;
-    /* Puedes ajustar la altura a lo que desees */
-    width: auto;
-    margin: 0 auto;
-    display: block;
-}
-
-.carruselInicio {
-    width: 100%;
-}
-
-/* Actividades Bariloche */
-
-.actividadesInicio {
-    display: flex;
+@media (max-width: 1000px) {
+  .infoContacto {
     flex-direction: column;
-}
-
-.actividadesInicio h2 {
-    display: flex;
+    align-items: center;
+  }
+  .infoContacto img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .redesSociales ul {
     justify-content: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.imgActividadesInicio {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
     padding-bottom: 3rem;
+  }
 }
-
-
-
-.imgActividadesInicio img {
-    outline: 10px solid rgba(230, 231, 232, 0.6);
-    outline-offset: -10px;
-    border-radius: 5px;
-}
-
-.imgActividadesInicio img {
-    width: 70dvh;
-    max-width: 100%;
-    height: auto;
-
-}
-
-
-.textActividadesInicio h3 {
-    text-align: center;
-    padding-bottom: 1rem;
-}
-
-.textActividadesInicio {
-    width: 70rem;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-bottom: 10rem;
-    margin-block: 1lh;
-}
-
-
-
-
-
-/* ------------------------------------------------------------------- Fin Index ------------------------------------------------------------------------------------ */
-
-
-
-/* ------------------------------------------------------------------- Lugares ------------------------------------------------------------------------------------ */
-.sectionLugares {
-    height: 250px;
-    margin-bottom: 50px;
-    position: relative;
+@media (max-width: 950px) {
+  .sectionFondoGastronomia .fondo-gastronomia {
+    font-size: 50px;
+  }
+  .sectionHistoria {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    overflow: hidden;
-}
-
-.sectionLugares::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url(../Imagenes/lugares/fondoLugares-3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.5);
-    z-index: 0;
-}
-
-.datosLugares {
-    position: relative;
-    z-index: 1;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-}
-
-
-.sectionCarrusel {
-    display: flex;
-    width: 800px;
-    height: 530px;
     margin: 0 auto;
+  }
 }
-
-.sectionCarrusel img {
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
+@media (max-width: 900px) {
+  .formNombreCompleto {
+    display: flex;
+    flex-direction: column;
+  }
+  .formNombreCompleto input {
+    width: 100%;
+  }
+  .sectionFormulario form {
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
-
-.sectionCarrusel img:hover {
-    width: 300px;
+@media (max-width: 850px) {
+  .sectionCarrusel {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .sectionCarrusel img {
+    width: 100%;
+    flex-grow: unset;
     opacity: 1;
-    filter: contrast(120%);
+    filter: none;
+    transition: none;
+    margin-bottom: 10px;
+  }
+  .sectionCarrusel img:hover {
+    width: 100%;
+    filter: none;
+    opacity: 1;
+  }
 }
-
-.sectionVideoLugares {
+@media (min-width: 750px) and (max-width: 850px) {
+  .sectionGastronomia img {
+    max-width: 350px;
+    height: min-content;
+  }
+}
+@media (max-width: 800px) {
+  .imgActividadesInicio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100dvh;
+  }
+  .sectionVideoLugares {
+    padding: 0 1rem;
+  }
 }
-.sectionVideoLugares h2 {
-    font-weight: 800;
-    padding-bottom: 20px;
+@media (max-width: 750px) {
+  .sectionGastronomia > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionGastronomia img {
+    margin: 0 auto;
+  }
 }
-.sectionVideoLugares iframe{
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    max-height: 450px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+@media (max-width: 700px) {
+  .sectionInicio h1 {
+    font-size: 50px;
+  }
+  .sectionFondoGastronomia .fondo-gastronomia {
+    font-size: 45px;
+  }
+  .sectionHistoria {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
-
-
-
- .cardLugares{
-      background: #f4f4f4;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .card {
-      background: white;
-      width: 100%;
-      max-width: 500px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .card img {
-      width: 100%;
-      height: 350px;
-      height: 100%;
-    }
-
-    .card-content {
-      padding: 15px;
-    }
-
-    .card-content h3 {
-      margin: 10px 0 5px;
-      font-size: 1.5em;
-    }
-
-    .card-content p {
-      color: #555;
-      font-size: 1em;
-      margin: 0;
-    }
-
-/* .sectionVideoLugares {
-    text-align: center;
-    padding: 50px 0px;
-}
-
-.sectionVideoLugares video {
-    width: 100dvh;
-} */
-
-
-
-/* ------------------------------------------------------------------- Fin Lugares ------------------------------------------------------------------------------------ */
-
-
-
-/* ------------------------------------------------------------------- Gastronomia ------------------------------------------------------------------------------------ */
-
-
-
-
-
-
-.sectionFondoGastronomia {
-    background-image: url(../Imagenes/gastronomia/comidaFondo.jpg);
-    height: 60dvh;
-    background-repeat: no-repeat;
+@media (max-width: 550px) {
+  .sectionInicio {
+    /* background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Inter";
-    position: relative;
-    overflow: hidden;
+    background-attachment: none; */
+  }
+  .sectionInicio h1 {
+    font-size: 40px;
+  }
 }
-
-.sectionFondoGastronomia::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 200px;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f4f5f7 100%);
-
+@media (max-width: 450px) {
+  .sectionInicio h1 {
+    font-size: 35px;
+    background-color: red;
+  }
+  .sectionFondoGastronomia h1 {
+    text-align: center;
+  }
 }
-
-.sectionFondoGastronomia h1 {
-    color: #fff;
-    font-size: 65px;
-    font-weight: 700;
+@media (max-height: 650px) {
+  .sectionFormulario h2 {
+    padding-top: 7rem;
+  }
 }
-
-.sectionGastronomia h2 {
-    font-weight: 700;
-}
-
-.sectionGastronomia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.sectionGastronomia > div {
-    display: flex;
-    gap: 5rem;
-    width: 100%;
-    max-width: 1100px;
-    justify-content: center;
-    padding: 0 50px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-.sectionGastronomia img {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: -5px 5px 15px rgb(49, 49, 49);
-}
-
-.platosGastronomia2,
-.platosGastronomia {
-    border-bottom: .5px solid rgb(143, 143, 143);
-}
-
-
-
-
-
-
-/* ------------------------------------------------------------------- Fin Gastronomia ------------------------------------------------------------------------------------ */
-
-
-
-/* ------------------------------------------------------------------- Historia ------------------------------------------------------------------------------------ */
-
-.sectionHistoria {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    margin-right: auto;
-    margin-left: 400px;
-    padding-bottom: 10rem;
-    /* margin-left: 100px; */
-}
-
-.sectionHistoria h1 {
-    font-weight: 700;
-    padding-top: 40px;
-}
-
-.sectionHistoria img {
-    border-radius: 5px;
-
-}
-
-.origenesBariloche img {
-    max-width: 100%;
-}
-
-.sectionHistoria p {
-    margin-block: 1lh;
-}
-
-.sectionHistoria h2 {
-    padding-top: 30px;
-}
-
-
-@keyframes show {
-    from {
-        opacity: 0;
-        scale: 25%;
-    }
-
-
-    to {
-        opacity: 1;
-        scale: 100%;
-    }
-}
-
-
-.sectionHistoria img {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-
-    animation-timeline: --image;
-    animation-name: show;
-
-
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
-}
-
-
-
-/* ------------------------------------------------------------------- Fin Historia ------------------------------------------------------------------------------------ */
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------------- Contacto ------------------------------------------------------------------------------------ */
-
 .infoContacto {
-    display: flex;
-    margin-top: 50px;
-    /* margin-left: 50px; */
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
-
 .infoContacto h1 {
-    font-weight: 700;
+  font-weight: 700;
 }
-
-.infoPersonal {
-    flex-direction: column;
-    width: 51rem;
-    max-width: 100%;
+.infoContacto .infoPersonal {
+  display: flex;
+  flex-direction: column;
+  width: 51rem;
+  max-width: 100%;
 }
-
 .infoContacto img {
-    width: 400px;
-    border-radius: 5%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.infoContacto .redesSociales ul {
+  display: flex;
+}
+.infoContacto .redesSociales ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.infoContacto .redesSociales ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.infoContacto .redesSociales ul li a .fa {
+  color: #000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.infoContacto .redesSociales ul li a .fa:hover {
+  color: #fff;
+}
+.infoContacto .redesSociales ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.infoContacto .redesSociales ul li:nth-child(1) a:hover {
+  background-color: #ec13b6;
+}
+.infoContacto .redesSociales ul li:nth-child(2) a:hover {
+  background-color: #e4405f;
+}
+.infoContacto .redesSociales ul li:nth-child(3) a:hover {
+  background-color: #55acee;
 }
 
 .sectionFormulario {
-    height: 90dvh;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
+  height: 90dvh;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
 .sectionFormulario h2 {
-    font-weight: 700;
+  font-weight: 700;
 }
-
-.formNombreCompleto {
-    display: flex;
-    gap: 1rem;
+.sectionFormulario label {
+  padding: 5px 0px;
 }
-
-.formNombre {
-    display: flex;
-    flex-direction: column;
-}
-
-.formApellido {
-    display: flex;
-    flex-direction: column;
-}
-
-.formEmail {
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
-}
-
-.redesSociales ul {
-    display: flex;
-}
-
-
-.redesSociales ul li {
-    list-style: none;
-    margin: 0 10px;
-}
-
-
-.redesSociales ul li .fa {
-    color: #000000;
-    font-size: 25px;
-    line-height: 50px;
-    transition: .5s;
-}
-
-
-.redesSociales ul li .fa:hover {
-    color: #ffffff;
-}
-
-
-.redesSociales ul li a {
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-    transition: 0.5s;
-    transform: translate(0, 0px);
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
-}
-
-
-.redesSociales ul li a:hover {
-    transform: rotate(0deg) skew(0deg) translate(0, -10px);
-}
-
-
-.redesSociales ul li:nth-child(1) a:hover {
-    background-color: #ec13b6;
-
-
-}
-
-
-.redesSociales ul li:nth-child(2) a:hover {
-    background-color: #e4405f;
-}
-
-
-.redesSociales ul li:nth-child(3) a:hover {
-    background-color: #55acee;
-}
-
-
 .sectionFormulario textarea,
 .sectionFormulario input {
-    background-image: none;
-    border: 1px solid #ccc;
-    outline: none;
-    transition: box-shadow 0.3s ease;
+  background-image: none;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: box-shadow 0.3s ease;
 }
-
 .sectionFormulario textarea:focus,
 .sectionFormulario input:focus {
-    box-shadow: 0 0 4px 2px rgb(3, 42, 58);
+  box-shadow: 0 0 4px 2px rgb(3, 42, 58);
+}
+.sectionFormulario .formNombreCompleto {
+  display: flex;
+  gap: 1rem;
+}
+.sectionFormulario .formNombreCompleto input {
+  width: 25rem;
+  max-width: 100%;
+  height: 40px;
+}
+.sectionFormulario .formNombre,
+.sectionFormulario .formApellido {
+  display: flex;
+  flex-direction: column;
+}
+.sectionFormulario .formEmail {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+.sectionFormulario .formEmail input {
+  width: 51rem;
+  max-width: 100%;
+  height: 40px;
+}
+.sectionFormulario .formMensaje {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+.sectionFormulario .formMensaje textarea {
+  max-width: 51rem;
+  height: 150px;
+  field-sizing: content;
+}
+.sectionFormulario .formBoton button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 25px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.sectionFormulario .formBoton button:hover {
+  transform: scale(1.05);
 }
 
-
-
-.sectionFormulario label {
-    padding: 5px 0px;
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.sectionHistoria {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: 400px;
+  padding-bottom: 10rem;
+}
+.sectionHistoria h1 {
+  font-weight: 700;
+  padding-top: 40px;
+}
+.sectionHistoria h2 {
+  padding-top: 30px;
+}
+.sectionHistoria p {
+  margin-block: 1lh;
+}
+.sectionHistoria img {
+  max-width: 100%;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+.sectionHistoria .origenesBariloche img {
+  max-width: 100%;
 }
 
-.formNombreCompleto input {
-    width: 25rem;
-    max-width: 100%;
-    height: 40px;
+.sectionFondoGastronomia {
+  background-image: url(../Imagenes/gastronomia/comidaFondo.jpg);
+  height: 60dvh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  position: relative;
+  overflow: hidden;
+}
+.sectionFondoGastronomia::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f4f5f7 100%);
+}
+.sectionFondoGastronomia h1 {
+  color: #fff;
+  font-size: 65px;
+  font-weight: 700;
 }
 
-.formEmail input {
-    width: 51rem;
-    max-width: 100%;
-    height: 40px;
+.sectionGastronomia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionGastronomia h2 {
+  font-weight: 700;
+}
+.sectionGastronomia img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: -5px 5px 15px rgb(49, 49, 49);
+}
+.sectionGastronomia > div {
+  display: flex;
+  gap: 5rem;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: center;
+  padding: 0 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-.formMensaje {
-    display: flex;
-    flex-direction: column;
-    padding-top: 15px;
+.platosGastronomia,
+.platosGastronomia2 {
+  border-bottom: 0.5px solid rgb(143, 143, 143);
 }
 
-.formMensaje textarea {
-    max-width: 51rem;
-    height: 150px;
+.sectionLugares {
+  height: 250px;
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.sectionLugares::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../Imagenes/lugares/fondoLugares-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  z-index: 0;
+}
+.sectionLugares .datosLugares {
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 5px #000;
 }
 
-.formBoton button {
-    background-color: black;
-    color: white;
-    padding: 10px 25px;
-    margin: 10px 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+.sectionCarrusel {
+  display: flex;
+  width: 800px;
+  height: 530px;
+  margin: 0 auto;
+}
+.sectionCarrusel img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+  aspect-ratio: 3/4;
+}
+.sectionCarrusel img:hover {
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
 }
 
-.formBoton button:hover {
-    transform: scale(1.05);
+.sectionVideoLugares {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+.sectionVideoLugares h2 {
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.sectionVideoLugares iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ------------------------------------------------------------------- Fin Contacto ------------------------------------------------------------------------------------ */
+.cardLugares {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.cardLugares .card {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.cardLugares .card img {
+  width: 100%;
+  height: 350px;
+  height: 100%;
+}
+.cardLugares .card .card-content {
+  padding: 15px;
+}
+.cardLugares .card .card-content h3 {
+  margin: 10px 0 5px;
+  font-size: 1.5em;
+}
+.cardLugares .card .card-content p {
+  color: #555;
+  margin: 0;
+}
 
-
-/* Footer */
+header {
+  font-size: 15px;
+  font-weight: 500;
+}
+header .custom-tittle {
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+}
+header .custom-style {
+  background-color: #000;
+  border-color: #000;
+}
+header .custom-style a {
+  color: #fff;
+  text-decoration: none;
+}
+header .custom-style:hover {
+  background-color: #333;
+  border-color: #333;
+}
+header .navbar-toggler {
+  border: 0;
+}
+header .navbar-toggler:focus, header .navbar-toggler:active,
+header .navbar-toggler .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+header .navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 15% 10%;
+}
+header .navbar-toggler .middle-bar {
+  opacity: 0;
+}
+header .navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 5% 10%;
+}
+header .navbar-toggler.collapsed .top-bar {
+  transform: rotate(0deg);
+}
+header .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+header .navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0deg);
+}
+header .navbar-toggler.collapsed .toggler-icon {
+  background-color: #000;
+}
+header .toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  transition: all 0.2s;
+}
+header .middle-bar {
+  margin: 5px auto;
+}
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    background: #26282c;
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  color: #fff;
+  background-color: #26282c;
+}
+footer .contieneRedes2 {
+  padding-left: 10px;
+}
+footer img {
+  width: 30px;
 }
 
-.footer-line {
+/* .footer-line {
     margin: 0 auto 20px auto;
     width: 115rem;
     height: 1px;
-    background-color: #333;
+    background-color: $greyColor;
+} */
+.sectionInicio {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../Imagenes/index/FondoInicio.jpg);
+  height: 100dvh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionInicio h1 {
+  font-family: "Inter";
+  color: rgb(225, 233, 246);
+  font-weight: 700;
+  font-size: 64px;
 }
 
-.contieneRedes2 {
-    padding-left: 10px;
+.lugaresInicio {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.lugaresInicio p {
+  font-weight: 400;
+  font-size: 20px;
 }
 
-footer h4 {
-    font-size: 19px;
-    font-weight: 600;
+.carousel-item img {
+  object-fit: cover;
+  max-height: 600px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
 }
 
-footer img {
-    width: 30px;
-    /* height: 30px; */
+.actividadesInicio {
+  display: flex;
+  flex-direction: column;
+}
+.actividadesInicio h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.actividadesInicio .imgActividadesInicio {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+.actividadesInicio .imgActividadesInicio img {
+  outline: 10px solid rgba(230, 231, 232, 0.6);
+  outline-offset: -10px;
+  border-radius: 5px;
+  width: 70dvh;
+  max-width: 100%;
+  height: auto;
+}
+.actividadesInicio .textActividadesInicio {
+  width: 70rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+  margin-block: 1lh;
+}
+.actividadesInicio .textActividadesInicio h3 {
+  text-align: center;
+  padding-bottom: 1rem;
 }
 
-
-/* ---------------------------------- Media Query ------------------------------------ */
-
-/* Index */
-@media (width < 1200px) {
-    .textActividadesInicio {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-}
-
-@media (width < 800px) {
-    .imgActividadesInicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .sectionVideoLugares {
-        padding: 0px 1rem;
-    }
-
-}
-
-@media (width < 700px) {
-    .sectionInicio h1 {
-        font-size: 50px;
-    }
-
-    .sectionFondoGastronomia h1 {
-        font-size: 45px;
-    }
-
-    .sectionHistoria {
-        max-width: 100%;
-
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-
-}
-
-@media (width < 550px) {
-    .sectionInicio h1 {
-        font-size: 40px;
-    }
-
-    .sectionInicio {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: none;
-    }
-}
-
-@media (width < 450px) {
-    .sectionInicio h1 {
-        font-size: 35px;
-    }
-
-    .sectionFondoGastronomia h1 {
-        text-align: center;
-    }
-
-}
-
-/* Gastronomia */
-
-@media (850px < width < 1200px) {
-    .sectionGastronomia img {
-        max-width: 450px;
-        height: min-content;
-    }
-}
-
-@media (width < 950px) {
-    .sectionFondoGastronomia h1 {
-        font-size: 50px;
-    }
-
-    .sectionHistoria {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-}
-
-@media (750px < width < 850px) {
-    .sectionGastronomia img {
-        max-width: 350px;
-        height: min-content;
-    }
-
-}
-
-@media (750px > width) {
-
-    .sectionGastronomia>div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sectionGastronomia img {
-        margin: 0 auto;
-    }
-}
-
-/* Contacto */
-
-@media (width < 1300px) {
-    .infoPersonal {
-        padding: 0px 1rem;
-    }
-}
-
-@media (width < 1000px) {
-    .infoContacto {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .redesSociales ul {
-        justify-content: center;
-        padding-bottom: 3rem;
-    }
-
-    .infoContacto img {
-        width: 100%;
-        max-width: 400px;
-    }
-}
-
-@media (width < 900px) {
-    .formNombreCompleto input {
-        width: 100%;
-    }
-
-    .formNombreCompleto {
-        display: flex;
-        flex-direction: column;
-
-
-    }
-
-    .sectionFormulario form {
-        width: 100%;
-        padding: 0px 1rem;
-    }
-}
-
-@media (width < 850px) {
-
-    .sectionCarrusel {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-
-
-    .sectionCarrusel img {
-        width: 100%;
-        flex-grow: unset;
-        opacity: 1;
-        filter: none;
-        transition: none;
-        margin-bottom: 10px;
-    }
-
-
-    .sectionCarrusel img:hover {
-        width: 100%;
-        filter: none;
-        opacity: 1;
-    }
-
-
-
-}
-
-@media (height < 650px){
-    .sectionFormulario h2{
-        padding-top: 7rem;
-    }
-}
+/*# sourceMappingURL=style.css.map */
