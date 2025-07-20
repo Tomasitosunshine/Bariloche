@@ -135,13 +135,13 @@ body {
   .sectionInicio .h1-responsive {
     font-size: 40px;
   }
+  main .sectionInicio {
+    background-attachment: scroll;
+  }
 }
 @media (max-width: 450px) {
   .sectionInicio .h1-responsive {
     font-size: 35px;
-  }
-  main .sectionInicio {
-    background-attachment: scroll;
   }
 }
 /* Alura */
