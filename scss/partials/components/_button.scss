@@ -1,0 +1,24 @@
+@import "../utilities/variables";
+
+.button {
+    background-color: $blackColor;
+    color: $whiteColor;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.formBoton {
+    button {
+      @extend .button;
+      margin: 10px 5px;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+

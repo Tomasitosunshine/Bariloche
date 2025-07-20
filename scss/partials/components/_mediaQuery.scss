@@ -46,54 +46,80 @@
 
 @media (max-width: 950px) {
   .sectionFondoGastronomia {
-    .fondo-gastronomia {
-      font-size: $size-tittle-gastronomia;
+    .h1-gastronomia {
+      font-size: 50px;
     }
   }
 
-  .sectionHistoria {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  main {
+    .sectionHistoria {
+      margin: 0 auto;
+    }
   }
+
 }
 
 @media (max-width: 900px) {
-  .formNombreCompleto {
-    input {
-      width: 100%;
-    }
 
-    display: flex;
-    flex-direction: column;
+  .sectionGastronomia {
+    >div {
+      img {
+        max-width: 350px;
+        height: min-content;
+      }
+    }
   }
 
-  .sectionFormulario {
-    form {
-      width: 100%;
-      padding: 0 1rem;
+  .formNombreCompleto {
+    display: flex;
+    flex-direction: column;
+
+    .formNombre {
+      .form-nombre {
+        width: 100%;
+      }
+
+
     }
+
+    .formApellido {
+      .form-nombre {
+        width: 100%;
+      }
+
+    }
+
   }
 }
 
-@media (max-width: 850px) {
-  .sectionCarrusel {
-    flex-direction: column;
+.sectionFormulario {
+  form {
     width: 100%;
-    height: auto;
+    padding: 0 1rem;
+  }
+}
 
-    img {
+
+@media (max-width: 850px) {
+  main {
+    .sectionCarrusel {
+      flex-direction: column;
       width: 100%;
-      flex-grow: unset;
-      opacity: 1;
-      filter: none;
-      transition: none;
-      margin-bottom: 10px;
+      height: 100%;
 
-      &:hover {
+      .img-carrusel {
         width: 100%;
-        filter: none;
+        flex-grow: 0;
         opacity: 1;
+        filter: none;
+        transition: none;
+        
+
+        &:hover {
+          width: 100%;
+          filter: none;
+          opacity: 1;
+        }
       }
     }
   }
@@ -135,14 +161,15 @@
 
 @media (max-width: 700px) {
   .sectionInicio {
-    h1 {
+    .h1-responsive {
       font-size: 50px;
     }
   }
 
   .sectionFondoGastronomia {
-    .fondo-gastronomia {
+    .h1-gastronomia {
       font-size: 45px;
+      text-align: center;
     }
   }
 
@@ -155,34 +182,25 @@
 
 @media (max-width: 550px) {
   .sectionInicio {
-    h1 {
+    .h1-responsive {
       font-size: 40px;
     }
 
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: none; */
+
   }
 }
 
 @media (max-width: 450px) {
   .sectionInicio {
-    h1 {
+    .h1-responsive {
       font-size: 35px;
-      background-color: red;
     }
   }
 
-  .sectionFondoGastronomia {
-    h1 {
-      text-align: center;
-    }
-  }
 }
 
 
-
+/* Alura */
 @media (max-height: 650px) {
   .sectionFormulario {
     h2 {
@@ -190,18 +208,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

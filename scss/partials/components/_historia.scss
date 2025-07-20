@@ -2,9 +2,6 @@
 @import "../utilities/variables";
 
 
-
-
-
 @keyframes show {
     from {
         opacity: 0;
@@ -18,7 +15,7 @@
     }
 }
 
-.sectionHistoria {
+.sectionHistoria {  
     @include flex-column;
     max-width: 50%;
     margin-right: auto;
@@ -40,6 +37,7 @@
 
     img {
         max-width: 100%;
+        border-radius: 5px;
         view-timeline-name: --image;
         view-timeline-axis: block;
 
