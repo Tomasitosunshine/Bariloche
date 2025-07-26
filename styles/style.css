@@ -145,8 +145,14 @@ body {
 }
 /* Alura */
 @media (max-height: 650px) {
-  .sectionFormulario h2 {
+  .sectionFormulario form h2 {
     padding-top: 7rem;
+  }
+  .sectionFormulario form .formBoton {
+    padding-bottom: 5rem;
+  }
+  footer {
+    margin-top: 10rem;
   }
 }
 .formBoton button {

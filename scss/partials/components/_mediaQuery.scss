@@ -217,8 +217,19 @@
 /* Alura */
 @media (max-height: 650px) {
   .sectionFormulario {
-    h2 {
-      padding-top: 7rem;
+    form{
+      h2 {
+        padding-top: 7rem;
+      }
+      .formBoton{
+        padding-bottom: 5rem;
+      }
+
     }
+
+
+  }
+  footer{
+    margin-top: 10rem;
   }
 }
