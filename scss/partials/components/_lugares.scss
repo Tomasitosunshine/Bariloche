@@ -1,14 +1,14 @@
-@import "../utilities/mixins";
-@import "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/variables" as v;
 
 .sectionLugares {
     height: 250px;
     margin-bottom: 50px;
     position: relative;
-    @include flex-column;
+      @include mixins.flex-column(column);
     justify-content: center;
     text-align: center;
-    color: $whiteColor;
+    color: v.$whiteColor;
     overflow: hidden;
 
     &::before {
@@ -19,7 +19,7 @@
         bottom: 0;
         left: 0;
         background-image: url(../Imagenes/lugares/fondoLugares-3.png);
-        @include background(no-repeat, cover, center);
+        @include mixins.background(no-repeat, cover, center);
         filter: brightness(0.5);
         z-index: 0;
     }
@@ -27,7 +27,7 @@
     .datosLugares {
         position: relative;
         z-index: 1;
-        text-shadow: 1px 1px 5px $blackColor;
+        text-shadow: 1px 1px 5px v.$blackColor;
     }
 }
 
@@ -55,7 +55,7 @@
 }
 
 .sectionVideoLugares {
-    @include flex-column;
+       @include mixins.flex-column(column);
     align-items: center;
     justify-content: center;
     height: 100dvh;
@@ -83,7 +83,7 @@
     padding: 20px;
 
     .card {
-        background: $whiteColor;
+        background: v.$whiteColor;
         width: 100%;
         max-width: 500px;
         border-radius: 10px;

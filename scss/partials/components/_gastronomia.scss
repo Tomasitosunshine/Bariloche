@@ -1,11 +1,11 @@
-@import "../utilities/mixins";
-@import "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/variables" as v;
 
 
 .sectionFondoGastronomia {
     background-image: url(../Imagenes/gastronomia/comidaFondo.jpg);
     height: 60dvh;
-    @include background(no-repeat, cover, center);
+    @include mixins.background(no-repeat, cover, center);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,18 +23,18 @@
     }
 
     h1 {
-        color: $whiteColor;
+        color: v.$whiteColor;
         font-size: 65px;
-        font-weight: $fontBold;
+        font-weight: v.$fontBold;
     }
 }
 
 .sectionGastronomia {
-    @include flex-column;
+       @include mixins.flex-column(column);
     align-items: center;
 
     h2 {
-        font-weight: $fontBold;
+        font-weight: v.$fontBold;
     }
 
     img {

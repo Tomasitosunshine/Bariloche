@@ -1,8 +1,8 @@
-@import "../utilities/mixins";
-@import "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/variables" as v;
 
 .sectionInicio {
-    @include background(no-repeat, cover, center);
+    @include mixins.background(no-repeat, cover, center);
     background-image: url(../Imagenes/index/FondoInicio.jpg);
     height: 100dvh;
     background-attachment: fixed;
@@ -13,7 +13,7 @@
     h1 {
         font-family: "Inter";
         color: rgba(225, 233, 246, 1);
-        font-weight: $fontBold;
+        font-weight: v.$fontBold;
         font-size: 64px;
     }
 }
@@ -40,7 +40,7 @@
 }
 
 .actividadesInicio {
-    @include flex-column;
+    @include mixins.flex-column(column);
 
     h2 {
         display: flex;

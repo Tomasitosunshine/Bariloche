@@ -1,10 +1,10 @@
-@import "../utilities/variables";
+@use "../utilities/variables" as v;
 footer{
     display: flex; 
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;
-    color: $whiteColor;
+    color: v.$whiteColor;
     background-color: #26282c; 
     .contieneRedes2{
         padding-left: 10px;

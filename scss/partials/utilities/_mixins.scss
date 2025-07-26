@@ -4,7 +4,7 @@
     background-position: $position;
 }
 
-@mixin flex-column{
+@mixin flex-column ($direction) {
     display: flex;
-    flex-direction: column;
+    flex-direction: $direction;
 }
