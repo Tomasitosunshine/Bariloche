@@ -4,10 +4,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
 }
 
 body {
+  font-family: "Montserrat";
   background-color: #f4f5f7;
   overscroll-behavior: none;
 }
@@ -153,6 +153,9 @@ body {
   }
   footer {
     margin-top: 10rem;
+  }
+  article .actividadesInicio .imgActividadesInicio img {
+    min-width: 75dvh;
   }
 }
 .formBoton button {
@@ -469,33 +472,42 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 1.5rem;
+  padding: 2rem;
 }
-.cardLugares .card {
-  background: #fff;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
+.cardLugares .mi-card {
+  background-color: #fff;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  max-width: 100%;
+}
+.cardLugares .mi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.cardLugares .mi-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.cardLugares .mi-card .card-content {
+  padding: 1rem;
   text-align: center;
 }
-.cardLugares .card img {
-  width: 100%;
-  height: 350px;
-  height: 100%;
+.cardLugares .mi-card .card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
-.cardLugares .card .card-content {
-  padding: 15px;
-}
-.cardLugares .card .card-content h3 {
-  margin: 10px 0 5px;
-  font-size: 1.5em;
-}
-.cardLugares .card .card-content p {
-  color: #555;
-  margin: 0;
+.cardLugares .mi-card .card-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
 }
 
 header {
