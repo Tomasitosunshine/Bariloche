@@ -250,10 +250,19 @@
     .actividadesInicio {
       .imgActividadesInicio {
         img {
-          width: 400px ;
+          width: 400px;
         }
 
       }
     }
   }
+
+  main {
+    .sectionInicio {
+      background-attachment: scroll;
+    }
+
+  }
+
+
 }

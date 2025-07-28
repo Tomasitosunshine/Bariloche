@@ -162,6 +162,9 @@ body {
   article .actividadesInicio .imgActividadesInicio img {
     width: 400px;
   }
+  main .sectionInicio {
+    background-attachment: scroll;
+  }
 }
 .formBoton button {
   background-color: #000;
