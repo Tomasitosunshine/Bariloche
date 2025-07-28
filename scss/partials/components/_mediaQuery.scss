@@ -1,6 +1,3 @@
-
-
-
 @media (max-width: 1300px) {
   .infoPersonal {
     padding: 0 1rem;
@@ -179,7 +176,7 @@
       padding-left: 1rem;
       padding-right: 1rem;
 
-     
+
     }
 
   }
@@ -195,9 +192,9 @@
 
   }
 
-  main{
-    .sectionInicio{
-    background-attachment: scroll;
+  main {
+    .sectionInicio {
+      background-attachment: scroll;
     }
 
   }
@@ -209,7 +206,7 @@
       font-size: 35px;
     }
   }
-  
+
 
 }
 
@@ -217,31 +214,46 @@
 /* Alura */
 @media (max-height: 650px) {
   .sectionFormulario {
-    form{
+    form {
       h2 {
         padding-top: 7rem;
       }
-      .formBoton{
+
+      .formBoton {
         padding-bottom: 5rem;
       }
 
     }
-    
+
   }
-  footer{
+
+  footer {
     margin-top: 10rem;
   }
 
-article{
-  .actividadesInicio{
-    .imgActividadesInicio{
-      img{
-        min-width: 75dvh;
+  article {
+    .actividadesInicio {
+      .imgActividadesInicio {
+        img {
+          min-width: 75dvh;
+        }
       }
     }
   }
+
+
+
 }
 
+@media (max-height: 380px) and (max-width: 800px) {
+  article {
+    .actividadesInicio {
+      .imgActividadesInicio {
+        img {
+          width: 400px ;
+        }
 
-
+      }
+    }
+  }
 }

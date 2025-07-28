@@ -158,6 +158,11 @@ body {
     min-width: 75dvh;
   }
 }
+@media (max-height: 380px) and (max-width: 800px) {
+  article .actividadesInicio .imgActividadesInicio img {
+    width: 400px;
+  }
+}
 .formBoton button {
   background-color: #000;
   color: #fff;
