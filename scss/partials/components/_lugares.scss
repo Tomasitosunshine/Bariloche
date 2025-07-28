@@ -84,7 +84,7 @@
     padding: 2rem;
 
     .mi-card {
-        background-color: #fff;
+        background-color: v.$whiteColor;
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -92,7 +92,7 @@
         display: flex;
         flex-direction: column;
         width: 450px; 
-        max-width: 100%; // no excede el contenedor
+        max-width: 100%; 
 
         &:hover {
             transform: translateY(-5px);
@@ -112,13 +112,12 @@
             h3 {
                 font-size: 1.25rem;
                 margin-bottom: 0.5rem;
-                color: #333;
+                color: v.$greyColor;
             }
 
             p {
                 font-size: 1rem;
                 color: #666;
-                line-height: 1.4;
             }
         }
     }
