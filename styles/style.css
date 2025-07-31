@@ -166,7 +166,7 @@ body {
     background-attachment: scroll;
   }
   main .sectionFormulario {
-    padding-top: 20rem;
+    padding: 20rem 0rem;
   }
 }
 .formBoton button {
